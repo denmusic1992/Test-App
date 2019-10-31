@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "115430154122",
+    "firebase_url": "https://meteor-chornyy.firebaseio.com",
+    "project_id": "meteor-chornyy",
+    "storage_bucket": "meteor-chornyy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115430154122:android:919a47dd62f3c2f73c7273",
+        "android_client_info": {
+          "package_name": "ru.meteor.chornyy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115430154122-qq6ahms2jpkrrmr7t316rqvgugnfaq00.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.meteor.chornyy",
+            "certificate_hash": "42e2531816a11854033a7d074cc0b9c0187da53a"
+          }
+        },
+        {
+          "client_id": "115430154122-d8vm325krd0aridcrfuvuuoqv1q62maa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB87FvYYiYdFGiem4QY6wJI36wryPE-sZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115430154122-d8vm325krd0aridcrfuvuuoqv1q62maa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

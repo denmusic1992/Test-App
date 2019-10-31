@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_expanded_height"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="146dp"
+        android:layout_height="109dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/header_bar_margin"
+        android:layout_marginLeft="@dimen/header_bar_margin"
+        android:contentDescription="@string/app_logo"
+        android:maxWidth="@dimen/header_bar_image_height"
+        android:maxHeight="@dimen/header_bar_image_height"
+        android:src="@drawable/meteor" />
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ru.meteor.chornyy">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+
+    <!-- Добавляем пермишены -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDdaJ-p5dwuK9tWkhzxbM6nngF5n0nRl6A" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/meteor_channel_id" />
+
+        <service
+            android:name=".Firebase.FirebaseService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Ui.CurrentBlogActivity">
+            <intent-filter android:label="CurrentBlogActivity">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:pathPrefix="/post_view"
+                    android:scheme="meteor" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="meteor"
+                    android:pathPrefix="/post_view"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Ui.BlogsActivity" />
+        <activity android:name=".Ui.CurrentReviewActivity" />
+        <activity android:name=".Ui.ReviewsActivity" />
+        <activity android:name=".Ui.CurrentServiceActivity" />
+        <activity android:name=".Ui.ServicesActivity" />
+        <activity android:name=".Dialogs.LoadingDialog" />
+        <activity android:name=".Dialogs.ErrorDialog" />
+        <activity android:name=".Ui.ContactsActivity" />
+        <activity
+            android:name=".Ui.NavigationActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Ui.MainActivity" />
+        <activity android:name=".Ui.CommonActivity" /> <!-- Для сплеш - активити -->
+        <activity
+            android:name=".Ui.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

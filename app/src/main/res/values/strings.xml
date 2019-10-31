@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Метеор Chornyy</string>
+    <string name="splash">splash</string>
+    <string name="no_internet">Отсутствует соединение с Интернетом</string>
+    <string name="ok">OK</string>
+    <string name="toggle_open">Открыть меню</string>
+    <string name="toggle_close">Закрыть меню</string>
+    <string name="app_logo">Логотип приложения</string>
+    <string name="services">Услуги</string>
+    <string name="reviews">Отзывы</string>
+    <string name="blogs">Блог</string>
+    <string name="contacts">Контакты</string>
+    <string name="hello_world">Hello World!!!</string>
+    <string name="Loading">Загрузка…</string>
+    <string name="phone">Телефон:</string>
+    <string name="address">Адрес:</string>
+    <string name="email">E-mail:</string>
+    <string name="error_connection">Не удалось загрузить данные с сервера.</string>
+    <string name="services_image">Изображение услуги</string>
+    <string name="meteor_channel_name">Meteor-Chornyy</string>
+    <string name="meteor_channel_id">MeteorChannelID</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
+

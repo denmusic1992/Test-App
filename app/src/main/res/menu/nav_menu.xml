@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/services"
+        android:icon="@drawable/services_24dp"
+        android:title="@string/services" />
+    <item
+        android:id="@+id/reviews"
+        android:icon="@drawable/reviews_24dp"
+        android:title="@string/reviews" />
+    <item
+        android:id="@+id/blogs"
+        android:icon="@drawable/blogs_24dp"
+        android:title="@string/blogs" />
+    <item
+        android:id="@+id/contacts"
+        android:icon="@drawable/contacts_24dp"
+        android:title="@string/contacts" />
+</menu>
